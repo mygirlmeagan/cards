@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meagan Cox | My Girl, Meagan Managed</title>
+<meta name="description" content="Operational and digital support for service-based businesses. Designing Growth. Managing Success. I'm Your Girl!">
+<meta property="og:title" content="Meagan Cox | My Girl, Meagan Managed">
+<meta property="og:description" content="Designing Growth. Managing Success. I'm Your Girl!">
+<meta property="og:image" content="https://card.mygirlmeagan.com/preview.jpg">
+<meta property="og:url" content="https://card.mygirlmeagan.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#E6E7E2">
+<link rel="icon" href="headshot.jpg">
+<link rel="apple-touch-icon" href="headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage: #A4B792;
+    --moss: #5F7350;
+    --ink: #2E2E2B;
+    --muted: #6B6E66;
+    --stone: #E6E7E2;
+    --line: #DADCD3;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--stone);
+    color: var(--ink);
+    font-family: Montserrat, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    max-width: 440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: var(--stone);
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 520px) {
+    body { padding: 32px 16px; }
+    .card { min-height: 0; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 40px rgba(46,46,43,.12); }
+  }
+  .serif { font-family: "Playfair Display", Georgia, serif; font-weight: 500; }
+  header {
+    background: var(--white);
+    padding: 40px 28px 32px;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  .photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--sage); }
+  .brand { font-size: 28px; line-height: 1.15; margin: 0; }
+  .role { font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--moss); }
+  .intro { margin: 6px 0 0; font-size: 15px; line-height: 1.55; }
+  .actions { padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    font-weight: 600; font-size: 15px; letter-spacing: .3px;
+    padding: 15px 18px; border-radius: 8px; min-height: 48px;
+    transition: background .15s, color .15s;
+  }
+  .btn-primary { background: var(--sage); color: var(--ink); }
+  .btn-primary:hover { background: #95AA82; }
+  .btn-secondary { background: var(--white); color: var(--moss); border: 1px solid var(--sage); }
+  .btn-secondary:hover { background: var(--moss); color: var(--white); }
+  .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .btn:focus-visible { outline: 3px solid var(--moss); outline-offset: 2px; }
+  section { padding: 0 28px 28px; display: flex; flex-direction: column; gap: 10px; }
+  h2 { margin: 0; font-size: 22px; }
+  section p { margin: 0; font-size: 15px; line-height: 1.55; }
+  .services { list-style: none; margin: 0; padding: 0; background: var(--white); border: 1px solid var(--line); border-radius: 12px; }
+  .services li { padding: 14px 18px; font-size: 15px; font-weight: 500; border-bottom: 1px solid var(--line); }
+  .services li:last-child { border-bottom: 0; }
+  .note { font-size: 13px; color: var(--muted); }
+  .tagline { padding: 12px 28px 44px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .tagline .small { font-size: 21px; line-height: 1.35; }
+  .tagline .big { font-size: 44px; line-height: 1.1; position: relative; padding-bottom: 14px; }
+  .tagline svg { position: absolute; left: -10px; bottom: 0; width: calc(100% + 24px); height: 18px; }
+  footer { margin-top: auto; padding: 24px 28px 36px; background: var(--ink); color: var(--white); text-align: center; }
+  footer .serif { font-size: 18px; margin-bottom: 6px; }
+  footer p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--stone); }
+</style>
+</head>
+<body>
+<main class="card">
+  <header>
+    <img class="photo" src="headshot.jpg" alt="Meagan Cox" width="120" height="120">
+    <h1 class="brand serif">My Girl, <em>Meagan</em> Managed</h1>
+    <div class="role">Meagan Cox · Founder</div>
+    <p class="intro">Operational and digital support for service-based businesses, so you can spend less time buried in the details and more time on the work only you can do.</p>
+  </header>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="https://portal.mygirlmeagan.com/public/discovery-call-with-meagan">Book a 20-minute discovery call</a>
+    <div class="row">
+      <a class="btn btn-secondary" href="tel:+12515123137">Call or text</a>
+      <a class="btn btn-secondary" href="mailto:hello@mygirlmeagan.com">Email me</a>
+    </div>
+    <div class="row">
+      <a class="btn btn-secondary" href="https://mygirlmeagan.com">Website</a>
+      <a class="btn btn-secondary" href="meagan-cox.vcf" download>Save contact</a>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="serif">Who I help</h2>
+    <p>Service-based business owners who are wearing every hat and ready to hand some of them off.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">How I can help</h2>
+    <ul class="services">
+      <li>Executive VA support</li>
+      <li>Social media management</li>
+      <li>Custom web design</li>
+      <li>Marketing services</li>
+    </ul>
+    <p class="note">Most clients work with me on a monthly retainer.</p>
+  </section>
+
+  <div class="tagline serif">
+    <div class="small">Designing Growth.<br>Managing Success.</div>
+    <div class="big">I’m Your Girl!<svg aria-hidden="true" viewBox="0 0 400 26" preserveAspectRatio="none"><path d="M6 20 Q 160 8 360 9 Q 392 9 388 18" fill="none" stroke="#A4B792" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+
+  <footer>
+    <div class="serif">Sent here by a friend?</div>
+    <p>Mention their name when you book so I can thank them.</p>
+  </footer>
+</main>
+</body>
+</html>
