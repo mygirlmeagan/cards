@@ -73,6 +73,17 @@
   .steps h3 { margin:0 0 6px; font-size:18px; }
   .steps p { margin:0; font-size:14px; line-height:1.6; }
 
+  .pricing { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; }
+  .plan { background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; display:flex; flex-direction:column; gap:6px; }
+  .plan.main { border:2px solid var(--sage); }
+  .plan .pname { font-size:20px; }
+  .plan .amt { font-size:34px; line-height:1.1; color:var(--moss); }
+  .plan .amt small { font-family:Montserrat, system-ui, sans-serif; font-size:14px; color:var(--muted); }
+  .plan p { margin:0; font-size:14px; line-height:1.6; }
+  .referral { margin-top:16px; background:var(--white); border-left:4px solid var(--sage); border-radius:0 14px 14px 0; padding:20px 24px; }
+  .referral h3 { margin:0 0 6px; font-size:20px; }
+  .referral p { margin:0; font-size:15px; line-height:1.6; }
+  .fine { margin:12px 0 0; font-size:13px; color:var(--muted); }
   .cta { background:var(--ink); color:var(--white); border-radius:16px; padding:40px 28px; text-align:center; margin:0 0 48px; display:flex; flex-direction:column; align-items:center; gap:12px; }
   .cta h2 { margin:0; font-size:clamp(28px, 4.5vw, 36px); line-height:1.15; }
   .cta p { margin:0; color:var(--stone); font-size:15px; line-height:1.6; max-width:480px; }
@@ -85,6 +96,7 @@
     .hero { grid-template-columns:minmax(0,1fr); gap:28px; }
     .examples { grid-template-columns:minmax(0,1fr); }
     .features { grid-template-columns:minmax(0,1fr); }
+    .pricing { grid-template-columns:minmax(0,1fr); }
     .steps { grid-template-columns:repeat(2, minmax(0,1fr)); }
   }
   @media (max-width:480px) {
@@ -222,6 +234,41 @@
       <li><h3 class="serif">You install it</h3><p>Your personal install page walks you through it in a few minutes.</p></li>
       <li><h3 class="serif">I keep it fresh</h3><p>When something changes, I update it on my end. No reinstalling.</p></li>
     </ol>
+  </section>
+
+  <section id="pricing">
+    <div class="sec-head">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="serif">Pay once. Hosting included.</h2>
+      <p>Popular signature apps charge around $9 to $19 a month, every month, for as long as you use them. With me, you pay once for the work and your hosting is included. No renewals, no surprise charges, and no losing your signature if a subscription lapses.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan main">
+        <div class="pname serif">New custom signature</div>
+        <div class="amt serif">$150</div>
+        <p>Designed, hosted, and set up with step-by-step install instructions.</p>
+      </div>
+      <div class="plan">
+        <div class="pname serif">Team signatures</div>
+        <div class="amt serif">$25 <small>each</small></div>
+        <p>Matching signatures for each additional person on your team.</p>
+      </div>
+      <div class="plan">
+        <div class="pname serif">Signature refresh</div>
+        <div class="amt serif">$65</div>
+        <p><em>Same details, new look.</em> Updated colors, fonts, layout, or icons to match a rebrand, plus a new install page.</p>
+      </div>
+      <div class="plan">
+        <div class="pname serif">Quick update</div>
+        <div class="amt serif">$19.99</div>
+        <p><em>Same design, new details.</em> Swap your photo, change a link, or update your title, phone number, or license info.</p>
+      </div>
+    </div>
+    <div class="referral">
+      <h3 class="serif">Referral bonus</h3>
+      <p>Know someone whose emails could use a little polish? For every person you send my way who books a signature, you'll get <strong>a $20 credit</strong> toward any update or service, and they'll get <strong>$15 off</strong> their first signature. Just have them mention your name when they reach out.</p>
+    </div>
+    <p class="fine">Pricing is subject to change at any time.</p>
   </section>
 
   <section class="cta">
