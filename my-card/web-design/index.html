@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Web Design | My Girl, Meagan Managed</title>
+<meta name="description" content="Custom websites built by Meagan Cox for service-based businesses.">
+<meta property="og:title" content="Custom Web Design | My Girl, Meagan Managed">
+<meta property="og:description" content="Custom websites built for service-based businesses.">
+<meta property="og:image" content="https://card.mygirlmeagan.com/my-card/web-design/img/shaikh-desktop.jpg">
+<meta property="og:url" content="https://card.mygirlmeagan.com/my-card/web-design/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#E6E7E2">
+<link rel="icon" href="../headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root { --sage:#A4B792; --moss:#5F7350; --ink:#2E2E2B; --muted:#6B6E66; --stone:#E6E7E2; --line:#DADCD3; --white:#FFFFFF; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--stone); color:var(--ink); font-family:Montserrat, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  .serif { font-family:"Playfair Display", Georgia, serif; font-weight:500; }
+  a { color:var(--moss); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  .top { padding:20px 0 0; }
+  .back { display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; text-decoration:none; color:var(--moss); padding:10px 0; min-height:44px; }
+  .back:hover { color:var(--ink); }
+  header.hero { padding:24px 0 36px; }
+  .eyebrow { font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--moss); }
+  h1 { font-size:clamp(34px, 6vw, 52px); line-height:1.08; margin:10px 0 14px; }
+  .lede { font-size:17px; line-height:1.6; max-width:620px; margin:0; }
+  .project { background:var(--white); border-radius:16px; overflow:hidden; margin-bottom:28px; border:1px solid var(--line); }
+  .shots { background:var(--stone); padding:28px 28px 0; display:grid; grid-template-columns: minmax(0,1fr) 160px; gap:20px; align-items:end; }
+  .shots a { display:block; text-decoration:none; }
+  .shots.solo { grid-template-columns:minmax(0,1fr); padding-left:56px; padding-right:56px; }
+  .desk { border-radius:10px 10px 0 0; overflow:hidden; box-shadow:0 10px 30px rgba(46,46,43,.12); }
+  .desk img, .phone img { display:block; width:100%; height:auto; }
+  .phone { border-radius:22px 22px 0 0; overflow:hidden; border:6px solid var(--ink); border-bottom:0; box-shadow:0 10px 30px rgba(46,46,43,.15); }
+  .info { padding:24px 28px 28px; display:flex; flex-direction:column; gap:10px; }
+  .info h2 { margin:0; font-size:28px; line-height:1.15; }
+  .kind { font-size:13px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--moss); }
+  .info p { margin:0; font-size:15px; line-height:1.6; }
+  .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; font-weight:600; font-size:14px; letter-spacing:.3px; padding:12px 18px; border-radius:8px; min-height:44px; }
+  .btn-primary { background:var(--sage); color:var(--ink); }
+  .btn-primary:hover { background:#95AA82; }
+  .btn-secondary { background:var(--white); color:var(--moss); border:1px solid var(--sage); }
+  .btn-secondary:hover { background:var(--moss); color:var(--white); }
+  .btn:focus-visible, .back:focus-visible, .shots a:focus-visible { outline:3px solid var(--moss); outline-offset:2px; }
+  .more { margin:44px 0 12px; }
+  .more h2 { font-size:28px; margin:0 0 6px; }
+  .more > p { margin:0 0 18px; font-size:15px; color:var(--muted); }
+  .live { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:14px; }
+  .live a { display:flex; flex-direction:column; gap:4px; background:var(--white); border:1px solid var(--line); border-radius:12px; padding:18px 20px; text-decoration:none; color:var(--ink); min-height:44px; }
+  .live a:hover { border-color:var(--sage); }
+  .live .name { font-family:"Playfair Display", Georgia, serif; font-size:21px; }
+  .live .url { font-size:13px; font-weight:600; color:var(--moss); }
+  .cta { background:var(--ink); color:var(--white); border-radius:16px; padding:36px 28px; text-align:center; margin:44px 0 48px; display:flex; flex-direction:column; align-items:center; gap:12px; }
+  .cta h2 { margin:0; font-size:30px; }
+  .cta p { margin:0; color:var(--stone); font-size:15px; line-height:1.6; max-width:460px; }
+  .cta .btn-primary { margin-top:6px; }
+  .cta .btn-primary:focus-visible { outline-color:var(--sage); }
+  @media (max-width:600px) {
+    .shots { grid-template-columns:minmax(0,1fr) 96px; padding:18px 18px 0; gap:12px; }
+    .shots.solo { grid-template-columns:minmax(0,1fr); padding:18px 18px 0; }
+    .phone { border-width:4px; border-radius:14px 14px 0 0; }
+    .info { padding:20px; }
+    .info h2 { font-size:24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a class="back" href="../">← Back to Meagan's card</a></div>
+
+  <header class="hero">
+    <div class="eyebrow">Portfolio · Custom Web Design</div>
+    <h1 class="serif">Websites built for the way you work</h1>
+    <p class="lede">Custom sites for service-based businesses, designed to look good on every screen and make it easy for clients to reach out, book, or apply.</p>
+  </header>
+
+  <article class="project">
+    <div class="shots">
+      <a class="desk" href="img/shaikh-full.jpg" aria-label="View the full Shaikh It Up Mortgages homepage"><img src="img/shaikh-desktop.jpg" alt="Shaikh It Up Mortgages homepage on desktop" loading="lazy" width="1600" height="1000"></a>
+      <a class="phone" href="img/shaikh-full.jpg" aria-label="View the full Shaikh It Up Mortgages homepage"><img src="img/shaikh-mobile.jpg" alt="Shaikh It Up Mortgages homepage on a phone" loading="lazy" width="600" height="1260"></a>
+    </div>
+    <div class="info">
+      <div class="kind">Mortgage Broker · Texas</div>
+      <h2 class="serif">Shaikh It Up Mortgages</h2>
+      <p>A full site build with home, services, about, and contact pages, plus clear paths to apply or schedule a consultation from every page.</p>
+      <div class="links"><a class="btn btn-secondary" href="img/shaikh-full.jpg">View full homepage</a></div>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="shots solo">
+      <a class="desk" href="img/able-full.jpg" aria-label="View the full Academy of Birth Leaders &amp; Educators homepage"><img src="img/able-desktop.jpg" alt="Academy of Birth Leaders &amp; Educators homepage on desktop" loading="lazy" width="1600" height="1000"></a>
+    </div>
+    <div class="info">
+      <div class="kind">Doula Training Academy · Nikia Lawson</div>
+      <h2 class="serif">Academy of Birth Leaders &amp; Educators</h2>
+      <p>A full site for a doula training academy, with course pages for birth doula, childbirth, and lactation education, client testimonials, a free resource download, and a meet-the-founder section.</p>
+      <div class="links">
+        <a class="btn btn-primary" href="https://www.nikialawson.com/" target="_blank" rel="noopener">Visit the live site</a>
+        <a class="btn btn-secondary" href="img/able-full.jpg">View full homepage</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="shots">
+      <a class="desk" href="img/linx-full.jpg" aria-label="View the full Linx Mortgage Group homepage"><img src="img/linx-desktop.jpg" alt="Linx Mortgage Group homepage on desktop" loading="lazy" width="1600" height="1000"></a>
+      <a class="phone" href="img/linx-full.jpg" aria-label="View the full Linx Mortgage Group homepage"><img src="img/linx-mobile.jpg" alt="Linx Mortgage Group homepage on a phone" loading="lazy" width="600" height="1260"></a>
+    </div>
+    <div class="info">
+      <div class="kind">Mortgage Group · Florida</div>
+      <h2 class="serif">Linx Mortgage Group</h2>
+      <p>Site design and build covering the homepage, mortgage options, a meet-the-broker page, and contact.</p>
+      <div class="links">
+        <a class="btn btn-primary" href="https://linxmortgage.com/" target="_blank" rel="noopener">Visit the live site</a>
+        <a class="btn btn-secondary" href="img/linx-full.jpg">View full homepage</a>
+      </div>
+    </div>
+  </article>
+
+  <section class="more">
+    <h2 class="serif">More live sites</h2>
+    <p>Recent builds you can explore right now.</p>
+    <div class="live">
+      <a href="https://twilightnewborncare.com/" target="_blank" rel="noopener"><span class="name">Twilight Newborn Care</span><span class="url">twilightnewborncare.com ↗</span></a>
+      <a href="https://austininfantcare.com/" target="_blank" rel="noopener"><span class="name">Austin Infant Care</span><span class="url">austininfantcare.com ↗</span></a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2 class="serif">Ready for a site that works as hard as you do?</h2>
+    <p>Let's talk about what your business needs and where your website fits in.</p>
+    <a class="btn btn-primary" href="https://portal.mygirlmeagan.com/public/discovery-call-with-meagan">Book a 20-minute discovery call</a>
+  </section>
+</div>
+</body>
+</html>
