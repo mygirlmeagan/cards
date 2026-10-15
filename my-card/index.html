@@ -78,6 +78,10 @@
   .services { list-style: none; margin: 0; padding: 0; background: var(--white); border: 1px solid var(--line); border-radius: 12px; }
   .services li { padding: 14px 18px; font-size: 15px; font-weight: 500; border-bottom: 1px solid var(--line); }
   .services li:last-child { border-bottom: 0; }
+  .services li a { display: flex; justify-content: space-between; align-items: center; color: var(--ink); text-decoration: none; margin: -14px -18px; padding: 14px 18px; min-height: 48px; }
+  .services li a span { color: var(--moss); }
+  .services li a:hover { background: var(--stone); }
+  .services li a:focus-visible { outline: 3px solid var(--moss); outline-offset: -3px; }
   .note { font-size: 13px; color: var(--muted); }
   .tagline { padding: 12px 28px 44px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; }
   .tagline .small { font-size: 21px; line-height: 1.35; }
@@ -119,7 +123,7 @@
     <ul class="services">
       <li>Executive VA support</li>
       <li>Social media management</li>
-      <li>Custom web design</li>
+      <li><a href="web-design/">Custom web design <span aria-hidden="true">→</span></a></li>
       <li>Marketing services</li>
     </ul>
   </section>
